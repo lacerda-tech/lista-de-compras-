@@ -10,10 +10,11 @@ security = HTTPBearer()
 
 # Config do JW
 JWT_SECRET = "sua_chave_secreta_super_segura"
-ALGORITHM = "HS256"
+ALGORITHM = "HS256" 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+# chave da crip
 
-# (user1 / 124)
+# (user1 /token de acesso)
 users_db = {
     "user1": {
         "username": "user1",
